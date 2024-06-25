@@ -8,7 +8,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from ..Courses import Courses
-
+from ..CourseItem import CourseItem
 class Home(HomeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -16,14 +16,7 @@ class Home(HomeTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def main_image_mouse_move(self, x, y, **event_args):
-    """This method is called when the mouse cursor moves over this component"""
-    pass
-
-  def main_image_show(self, **event_args):
-    """This method is called when the Image is shown on the screen"""
-    pass
-
+  
   def view_courses_click(self, **event_args):
     """This method is called when the button is clicked"""
     self.content_panel.clear()

@@ -16,11 +16,11 @@ class Courses(CoursesTemplate):
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
     self.load_courses()
-    c=CourseItem(name = "Python", button_text = "Buy For $39 ", description = " The Best course for you!")
-   
+
+    self.content_panel.add_component(CourseItem(name = "Python", button_text = "Buy For $39 ", description = " The Best course for you!"))
     # Any code you write here will run before the form opens.
   def load_courses(self):
-    courses = anvil.server.call('get_course_details').search()
-    print(courses)
+    courses = anvil.server.call('get_course_details','name').search()
+    
     for course in courses:
-      print(course["name"])
+      print(course['name'])

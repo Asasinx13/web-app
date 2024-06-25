@@ -13,10 +13,16 @@ class CourseItem(CourseItemTemplate):
   def __init__(self, name, description,button_text, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-    self.name.text = name
-    self.description.text = description
-    self.buy.text = button_text
+    self.name_label.text = name
+    self.description_label.text = description
+    self.button.text = button_text
     
     
 
     # Any code you write here will run before the form opens.
+
+  def name_label_show(self, **event_args):
+    """This method is called when the Label is shown on the screen"""
+    pass
+
+
