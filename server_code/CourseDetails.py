@@ -14,6 +14,6 @@ import anvil.server
 # Here is an example - you can replace it with your own:
 #
 @anvil.server.callable
-def get_cars_details(name):
-   return app_tables.cars.client_readable()
+def get_course_details(name):
+   return app_tables.courses.client_readable()
 #

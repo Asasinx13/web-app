@@ -8,7 +8,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
 from ..Home import Home
-from ..MyCars import MyCars
+from ..MyCourses import MyCourses
 class Base(BaseTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -20,7 +20,7 @@ class Base(BaseTemplate):
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
     self.content_panel.clear()
-    self.content_panel.add_component(MyCars())
+    self.content_panel.add_component(MyCourses())
     
   def change_sign_in_text(self):
     user=anvil.users.get_user()
@@ -29,9 +29,9 @@ class Base(BaseTemplate):
       self.sign_in.text=email
     else:
       self.sign_in.text="Sign In"
-    self.toggle_my_cars_link()
-  def toggle_my_cars_link(self):
-    self.my_cars.visible=anvil.users.get_user() != None
+    self.toggle_my_courses_link()
+  def toggle_my_courses_link(self):
+    self.my_courses.visible=anvil.users.get_user() != None
 
   def Title_click(self, **event_args):
     """This method is called when the link is clicked"""

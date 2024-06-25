@@ -1,4 +1,4 @@
-from ._anvil_designer import CarsTemplate
+from ._anvil_designer import CoursesTemplate
 from anvil import *
 import anvil.server
 import anvil.google.auth, anvil.google.drive
@@ -7,20 +7,20 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 import anvil.users
-from ..CarItem import CarItem
+from ..CourseItem import CourseItem
 
 
-class Cars(CarsTemplate):
+class Courses(CoursesTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
     # Any code you write here will run before the form opens.
-    self.load_cars()
-    c=CarItem(name = ["Mark"], button_text = "Buy For $", description = " The Best car for you!")
+    self.load_courses()
+    c=CourseItem(name = "Python", button_text = "Buy For $39 ", description = " The Best course for you!")
    
     # Any code you write here will run before the form opens.
-  def load_cars(self):
-    cars = anvil.server.call('get_cars_details', 'name').search()
-    print(cars)
-    for car in cars:
-      print(car['Mark '],car['Model'])
+  def load_courses(self):
+    courses = anvil.server.call('get_course_details').search()
+    print(courses)
+    for course in courses:
+      print(course["name"])

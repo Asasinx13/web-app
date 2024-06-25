@@ -8,7 +8,7 @@ components:
   layout_properties: {grid_position: 'RANWZJ,SEKQGF'}
   components:
   - type: Label
-    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: My Cars!}
+    properties: {role: null, bold: false, align: left, spacing_above: small, background: '', icon: '', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, font_size: null, tooltip: '', text: My Courses}
     name: label_1
     layout_properties: {grid_position: 'HMZFGN,HLHSSU'}
 is_package: true

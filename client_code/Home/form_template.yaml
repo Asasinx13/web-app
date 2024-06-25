@@ -8,7 +8,7 @@ components:
   layout_properties: {grid_position: 'EMKQJL,RNOCVD'}
   components:
   - type: RichText
-    properties: {role: null, format: markdown, align: center, spacing_above: small, content: This is your dream garage shop! Enjoy, background: '', font: '', foreground: '', spacing_below: small, visible: true, border: '', enable_slots: true, font_size: 38, tooltip: '', data: null}
+    properties: {role: null, format: markdown, align: center, spacing_above: small, content: This is your education! Enjoy, background: '', font: '', foreground: '', spacing_below: small, visible: true, border: '', enable_slots: true, font_size: 38, tooltip: '', data: null}
     name: label
     layout_properties: {grid_position: 'MQJBXY,ETXTBC'}
   - type: Image
@@ -17,8 +17,8 @@ components:
     layout_properties: {grid_position: 'FDETOE,DQOIJY'}
     event_bindings: {mouse_move: main_image_mouse_move, show: main_image_show}
   - type: Button
-    properties: {role: primary-color, bold: true, align: center, spacing_above: small, background: '', icon: 'fa:arrow-circle-o-right', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 22, tooltip: '', text: View Cars}
-    name: view_cars
+    properties: {role: primary-color, bold: true, align: center, spacing_above: small, background: '', icon: 'fa:arrow-circle-o-right', underline: false, font: '', icon_align: left, foreground: '', spacing_below: small, visible: true, border: '', italic: false, enabled: true, font_size: 22, tooltip: '', text: View Courses}
+    name: view_courses
     layout_properties: {grid_position: 'EASVIR,FKOKZN'}
     event_bindings: {click: view_cars_click}
 is_package: true

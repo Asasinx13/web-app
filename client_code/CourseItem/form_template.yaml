@@ -21,7 +21,7 @@ components:
 is_package: true
 custom_component: true
 properties:
-- {name: mark, type: string, default_value: '', important: true, default_binding_prop: true}
+- {name: name, type: string, default_value: '', important: true, default_binding_prop: true}
 - {name: image, type: object, important: true}
 - {name: button_callback, type: object, important: true, description: Function to call when buying car}
 - {name: description, type: string, default_value: '', important: true}
